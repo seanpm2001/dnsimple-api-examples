@@ -12,6 +12,6 @@ name = Enum.at(System.argv, 0)
 
 IO.inspect Dnsimple.Registrar.register_domain(client, account_id, name, %{
   registrant_id: registrant.id,
-  auto_renew: 0,
-  privacy: 0,
+  auto_renew: false,
+  privacy: false,
 })
